@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>services - KVS HR Solutions</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="HR consulting firm, HR strategy consulting, employee engagement programs, leadership development, organizational transformation, HRIS implementation, HR compliance audit, training and development, digital HR transformation.">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <link href="assets/img/KVSlogo.jpg" rel="icon">
+  <link href="assets/img/KVSlogo.jpg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: KnightOne
+  * Template URL: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/
+  * Updated: Oct 16 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <style>
+ 
+   /* Services Banner Styling */
+.services-banner {
+  position: relative;
+  background: 
+              url('assets/img/abbanner.png') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--contrast-color);
+  overflow: hidden;
+}
+/* 
+.services-banner .banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+} */
+
+.services-banner .banner-content {
+  position: relative;
+  z-index: 2;
+  color: var(--contrast-color);
+  text-align: center;
+  max-width: 800px;
+}
+
+.services-banner h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--contrast-color);
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.services-banner p {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+
+    /* Service Cards */
+    .service-section {
+      padding: 80px 0;
+    }
+
+    .service-box {
+      /* background: var(--surface-color); */
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      overflow: hidden;
+      margin-bottom: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+    }
+
+    .service-img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    
+    .service-content {
+      padding: 40px;
+      background: linear-gradient(135deg, #f8fbfa, #e9f4f1);
+    }
+
+    .service-content h3 {
+      color: var(--heading-color);
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .service-content ul {
+      padding-left: 20px;
+    }
+
+    .service-content ul li {
+      margin-bottom: 8px;
+    }
+
+    .outcome {
+      background-color: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: inline-block;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .service-content {
+        padding: 25px;
+      }
+    }
+
+    .service-box {
+  display: flex;
+  align-items: stretch;
+}
+/* Default (Desktop/Tablets) */
+.service-box {
+  display: flex;
+  align-items: stretch;
+}
+
+.service-box .service-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  padding: 30px;
+}
+
+/* ✅ Responsive Fix (Tablet & Mobile) */
+@media (max-width: 992px) {
+  .service-box {
+    flex-direction: column; /* column stacking */
+  }
+
+  .service-box .service-img,
+  .service-content {
+    height: auto; /* auto height on mobile/tablets */
+  }
+
+  .service-content {
+    padding: 15px;
+  }
+
+  .service-box .service-img {
+    margin-bottom: 15px; /* thoda gap between img & text */
+  }
+}
+
+
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/upscalemedia-transformed.png" alt="">
+        <!-- <h1 class="sitename">KVS HR Solutions</h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="Index.html" >Home</a></li>
+          <li><a href="About.html" >About</a></li>
+          <li><a href="Services.html" class="active">Services</a></li>
+           <li><a href="Outsourcing_Solutions.html">Outsourcing Solutions </a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- <a class="cta-btn" href="#about">Get Started</a> -->
+
+    </div>
+  </header>
+
+  <main class="main">
+<!-- Services Banner Section -->
+<section class="services-banner d-flex align-items-center justify-content-center text-center">
+  <div class="banner-overlay"></div>
+  <div class="banner-content" data-aos="zoom-in">
+    <h1>Our HR Services</h1>
+    <p>Strengthening Organizations Through Smart HR Solutions</p>
+  </div>
+</section>
+
+
+  <!-- Services Section -->
+  <section class="service-section container">
+   <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="fw-bold mb-3 ">Comprehensive HR Solutions for Growing Organizations</h2>
+        <p class=" text-muted w-75 mx-auto" style="text-align: justify;">
+        We provide end-to-end HR solutions designed for organizations that are scaling up — helping them strengthen their people systems, stay compliant and drive measurable business performance.
+        </p>
+      </div>
+    <!-- 1 -->
+   <div class="row align-items-center service-box">
+  <!-- Left Side Image -->
+  <div class="col-md-6" data-aos="fade-up">
+    <img src="assets/img/HR-Strategy.jpeg" class="service-img rounded shadow-sm" alt="HR Strategy, Structure & Policy Frameworks">
+  </div>
+
+  <!-- Right Side Content -->
+  <div class="col-md-6 service-content" data-aos="fade-up" data-aos-delay="100">
+    <h3 class="fw-bold ">1. HR Strategy, Structure & Policy Frameworks</h3>
+    <p class="">
+<b>      We design scalable HR frameworks that align people, purpose and performance.
+</b>    </p>
+
+    <ul class="">
+      <li>Organization structure and role clarity</li>
+      <li>HR policy manuals and SOPs</li>
+      <li>Compensation, rewards and performance systems</li>
+      <li>Workforce planning and succession mapping</li>
+    </ul>
+
+    <span class="outcome d-block fw-semibold mt-3 ">
+      <strong>Outcome:</strong> A growth-ready HR ecosystem with clarity and strategic alignment.
+    </span>
+  </div>
+</div>
+
+
+    <!-- 2 -->
+    <div class="row align-items-center flex-md-row-reverse service-box">
+      <div class="col-md-6"data-aos="fade-up">
+        <img src="assets/img/talent.jpeg" class="service-img" alt="HR Strategy">
+      </div>
+   <div class="col-md-6 service-content" data-aos="fade-up">
+  <h3 class="fw-bold ">2. Talent Acquisition & Management</h3>
+  <p><b>Build winning teams through structured and insight-driven hiring.</b></p>
+  <ul>
+    <li>Role-based hiring and JD creation</li>
+    <li>Behavioural and compatibility assessments</li>
+    <li>Interview process and onboarding standardization</li>
+    <li>Employer branding and retention strategies</li>
+  </ul>
+  <span class="outcome"><strong>Outcome:</strong>: Stronger hires, lower attrition and a unified, high-performing culture.</span>
+</div>
+
+    </div>
+
+
+
+    <!-- 3 -->
+    <div class="row align-items-center service-box">
+      <div class="col-md-6" data-aos="fade-up">
+        <img src="assets/img/Performance.jpeg" class="service-img" alt="Talent Management">
+      </div>
+     <div class="col-md-6 service-content" data-aos="fade-up">
+  <h3 class="fw-bold ">3. Performance & Culture Transformation</h3>
+  <p><b>We enable a culture of accountability, performance and engagement.</b></p>
+  <ul>
+    <li>Performance management systems</li>
+    <li>Culture and engagement diagnostics</li>
+    <li>Leadership and manager development</li>
+    <li>Behavioural training interventions</li>
+  </ul>
+  <span class="outcome">Outcome: A culture of ownership, productivity and collaboration.</span>
+</div>
+
+    </div>
+
+    <!-- 4 -->
+    <div class="row align-items-center flex-md-row-reverse service-box">
+      <div class="col-md-6" data-aos="fade-up">
+        <img src="assets/img/Employee.jpeg" class="service-img" alt="Performance & Culture">
+      </div>
+     <div class="col-md-6 service-content" data-aos="fade-up">
+  <h3 class="fw-bold ">4. Employee Engagement & Wellbeing</h3>
+  <p><b>Create an environment where people feel valued, motivated and supported.</b></p>
+  <ul>
+    <li>Employee engagement and pulse surveys</li>
+    <li>Recognition and rewards programs</li>
+    <li>Wellbeing and mental health initiatives</li>
+    <li>Team-building and offsite events</li>
+  </ul>
+  <span class="outcome">Outcome: A connected, inspired and resilient workforce.</span>
+</div>
+
+    </div>
+
+    <!-- 5 -->
+    <div class="row align-items-center service-box">
+      <div class="col-md-6" data-aos="fade-up">
+        <img src="assets/img/Leadership.jpeg" class="service-img" alt="Behavioural Assessment">
+      </div>
+     <div class="col-md-6 service-content" data-aos="fade-up">
+  <h3 class="fw-bold ">5. Leadership Development & Succession Planning</h3>
+  <p><b>Develop leaders who drive growth and continuity.</b></p>
+  <ul>
+    <li>Critical role and talent mapping</li>
+    <li>Successor identification and readiness planning</li>
+    <li>Leadership coaching and mentoring</li>
+    <li>Capability-building programs</li>
+  </ul>
+  <span class="outcome">Outcome: Future-ready leaders and sustained business success.</span>
+</div>
+
+    </div>
+
+    <!-- 6 -->
+    <div class="row align-items-center flex-md-row-reverse service-box">
+      <div class="col-md-6" data-aos="fade-up">
+        <img src="assets/img/Learning.jpeg" class="service-img" alt="HR Compliance">
+      </div>
+     <div class="col-md-6 service-content" data-aos="fade-up">
+  <h3 class="fw-bold ">6. Training, Learning & Development</h3>
+  <p><b>Enhance skills, performance and potential through impactful learning journeys.</b></p>
+  <ul>
+    <li>Learning needs and skill gap analysis</li>
+    <li>Soft skills and leadership training</li>
+    <li>Functional, compliance and technical learning</li>
+    <li>AI-powered learning analytics and dashboards</li>
+  </ul>
+  <span class="outcome">Outcome: A skilled, agile and continuously evolving workforce.</span>
+</div>
+
+    </div>
+
+
+
+<!-- 7 -->
+<div class="row align-items-center service-box">
+  <div class="col-md-6" data-aos="fade-up">
+    <img src="assets/img/Management.jpeg" class="service-img" alt="Change Management">
+  </div>
+
+  <div class="col-md-6 service-content" data-aos="fade-up">
+    <h3 class="fw-bold ">7. Change Management & Organizational Development</h3>
+    <p><b>We guide organizations through transformation with clarity and confidence.</b></p>
+    <ul>
+      <li>Change readiness and communication strategies</li>
+      <li>Organizational design and restructuring support</li>
+      <li>Post-merger culture and team integration</li>
+      <li>Transformation and growth enablement plans</li>
+    </ul>
+    <span class="outcome">Outcome: Smooth transitions and a resilient, future-ready organization.</span>
+  </div>
+</div>
+
+
+
+
+
+<!-- 8 -->
+<div class="row align-items-center flex-md-row-reverse service-box">
+  <div class="col-md-6" data-aos="fade-up">
+    <img src="assets/img/HRIS.jpeg" class="service-img" alt="HRIS Implementation">
+  </div>
+  <div class="col-md-6 service-content" data-aos="fade-up">
+    <h3 class="fw-bold ">8. HRIS Implementation & Digital HR Transformation</h3>
+    <p ><b>Transform HR operations with smart technology and AI-driven insights.</b></p>
+    <ul>
+      <li>HRIS platform evaluation and deployment</li>
+      <li>Process automation and digital workflow design</li>
+      <li>Real-time HR analytics and dashboards</li>
+      <li>AI-enabled reporting and Excel/Word data analysis</li>
+    </ul>
+    <span class="outcome">Outcome: A tech-enabled, data-smart HR function that drives speed and accuracy.</span>
+  </div> 
+</div>
+
+<!-- 9 -->
+<div class="row align-items-center service-box" >
+  <div class="col-md-6" data-aos="fade-up">
+    <img src="assets/img/Compatibility.jpeg" class="service-img" alt="Behavioural & Compatibility Assessments">
+  </div>
+  <div class="col-md-6 service-content" data-aos="fade-up">
+    <h3 class="fw-bold ">9. Behavioural & Compatibility Assessments</h3>
+    <p><b>Leverage data-driven insights for smarter people decisions.</b></p>
+    <ul>
+      <li>Personality and compatibility mapping</li>
+      <li>Leadership and potential assessments</li>
+      <li>Team dynamics and conflict management</li>
+      <li>Assessment-based hiring and promotions</li>
+    </ul>
+    <span class="outcome">Outcome: Objective, confident and well-informed talent decisions.</span>
+  </div>
+</div>
+
+<!-- 10 -->
+<div class="row align-items-center flex-md-row-reverse service-box">
+  <div class="col-md-6" data-aos="fade-up">
+    <img src="assets/img/HR_Audits.jpeg" class="service-img" alt="HR Audits & Process Excellence">
+  </div>
+  <div class="col-md-6 service-content" data-aos="fade-up">
+    <h3 class="fw-bold ">10. HR Audits, Compliance & Process Excellence</h3>
+    <p><b>Strengthen your HR foundation with robust governance and compliance.</b></p>
+    <ul>
+      <li>HR audit and process diagnostics</li>
+      <li>Payroll structure and statutory alignment</li>
+      <li>Documentation and compliance frameworks</li>
+      <li>Risk identification and process improvement</li>
+    </ul>
+    <span class="outcome">Outcome: Transparent, compliant and efficient HR operations.</span>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  </section>
+
+
+<style>
+  
+</style>
+
+  </main>
+<footer id="footer" class="footer dark-background">
+  <div class="container text-center">
+    <h3 class="sitename">KVS HR Solutions</h3>
+    <p>Empowering businesses through smart HR strategies, compliance and people-driven success.</p>
+    
+    <div class="social-links d-flex justify-content-center">
+      <a href="#"><i class="bi bi-twitter-x"></i></a>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; <strong><span>KVS HR Solutions</span></strong>. All Rights Reserved.         Designed by <a href="http://innovaneers.in/" target="_blank">Innovaneers Technologies</a></a>
+
+      </div>
+      <!-- <div class="credits">
+        Designed by <a href="#">Innovaneers Technologies</a></a>
+      </div> -->
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

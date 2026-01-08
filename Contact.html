@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contact - KVS HR Solutions</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="HR consulting firm, HR strategy consulting, employee engagement programs, leadership development, organizational transformation, HRIS implementation, HR compliance audit, training and development, digital HR transformation.">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+   <link href="assets/img/KVSlogo.jpg" rel="icon">
+  <link href="assets/img/KVSlogo.jpg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: KnightOne
+  * Template URL: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/
+  * Updated: Oct 16 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+<style>
+    
+  
+
+   /* Services Banner Styling */
+.services-banner {
+  position: relative;
+  background: 
+              url('assets/img/abbanner.png') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--contrast-color);
+  overflow: hidden;
+}
+
+
+.services-banner .banner-content {
+  position: relative;
+  z-index: 2;
+  color: var(--contrast-color);
+  text-align: center;
+  max-width: 800px;
+}
+
+.services-banner h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--contrast-color);
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.services-banner p {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+/* Base form container */
+.styled-contact-form {
+  background: #fff;
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Smooth background overlay effect */
+.styled-contact-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg,  #1565A3, #778bad);
+}
+
+/* Input fields */
+.styled-contact-form .form-control {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px 15px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+.styled-contact-form .form-control:focus {
+  border-color:  #1565A3;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Textarea resize control */
+.styled-contact-form textarea {
+  resize: none;
+}
+
+/* Button styling */
+.submit-btn {
+  background: linear-gradient(90deg, #1565A3,  #1565A3);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 12px 35px;
+  border-radius: 50px;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #527fcc,  #1565A3);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+}
+
+/* Messages */
+.loading,
+.error-message,
+.sent-message {
+  display: none;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.loading {
+  color: #1565A3;
+}
+
+.error-message {
+  color: #dc3545;
+}
+
+.sent-message {
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .styled-contact-form {
+    padding: 30px 20px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/upscalemedia-transformed.png" alt="">
+        <!-- <h1 class="sitename">KVS HR Solutions</h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="Index.html" >Home</a></li>
+          <li><a href="About.html" >About</a></li>
+          <li><a href="Services.html">Services</a></li>
+           <li><a href="Outsourcing_Solutions.html">Outsourcing Solutions </a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="Contact.html" class="active">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- <a class="cta-btn" href="#about">Get Started</a> -->
+
+    </div>
+  </header>
+
+  <main class="main">
+
+
+    <section class="services-banner d-flex align-items-center justify-content-center text-center">
+  <div class="banner-overlay"></div>
+  <div class="banner-content" data-aos="zoom-in">
+    <h1>Contact Us</h1>
+    <p>  Need HR support? Fill the form or contact us — we reply within 1 business day.</p>
+  </div>
+</section>
+
+
+  <!-- Banner -->
+  <!-- <header class="contact-banner">
+    <div class="container">
+      <div class="title" data-aos="fade-down">Get in touch with KVS HR Solutions</div>
+      <div class="subtitle" data-aos="fade-up">
+        We're here to help with HR audits, policy design, talent programs, compliance and more.
+        Fill the form or use the contact details — we usually respond within 1 business day.
+      </div>
+    </div>
+  </header> -->
+
+  <!-- Main container -->
+  <main class="contact-wrap" role="main">
+
+ 
+   
+<!-- Contact Section -->
+<section id="contact" class="contact section ">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Get in Touch</h2>
+    <p style="color: black; font-size: 18px;">We’d love to hear from you! Whether you have questions, need HR assistance or want to collaborate — reach out to us anytime.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade" data-aos-delay="100">
+    <div class="row gy-4">
+
+      <div class="col-lg-4">
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-geo-alt flex-shrink-0"></i>
+          <div>
+            <h3>Office Address</h3>
+            <p>1251, UG Floor, Sector 9, Gurugram (Haryana, India) - 122001</p>
+          </div>
+        </div><!-- End Info Item -->
+
+    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+  <i class="bi bi-telephone flex-shrink-0"></i>
+  <div>
+    <h3>Call Us</h3>
+    <p><a href="tel:+91 9953100536" class="text-decoration-none">+91 9953100536</a></p>
+  </div>
+</div><!-- End Info Item -->
+
+<div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+  <i class="bi bi-envelope flex-shrink-0"></i>
+  <div>
+    <h3>Email Us</h3>
+    <p><a href="mailto:kvsservices1@gmail.com" class="text-decoration-none">kvsservices1@gmail.com</a></p>
+     <p><a href="mailto:gupta_v11@yahoo.com" class="text-decoration-none">gupta_v11@yahoo.com</a></p>
+  </div>
+</div><!-- End Info Item -->
+
+
+      
+      </div>
+<div class="col-lg-8">
+  <form id="contactForm" class="styled-contact-form" data-aos="fade-up" data-aos-delay="200">
+
+    <div class="row gy-4">
+
+      <div class="col-md-6">
+        <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
+      </div>
+
+      <div class="col-md-6">
+        <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required>
+      </div>
+
+      <div class="col-md-12">
+        <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" required>
+      </div>
+
+      <div class="col-md-12">
+        <textarea name="message" id="message" rows="6" class="form-control" placeholder="Write your message here..." required></textarea>
+      </div>
+
+    </div>
+
+    <div class="col-md-12 text-center mt-3">
+      <div class="loading" style="display:none;">Sending...</div>
+      <div class="error-message" style="display:none; color:red;"></div>
+      <div class="sent-message" style="display:none; color:green;">Your message has been successfully sent. Thank you!</div>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </div>
+
+  </form>
+</div>
+
+    </div>
+  </div>
+
+</section>
+<!-- /Contact Section -->
+
+
+  </main>
+<footer id="footer" class="footer dark-background">
+  <div class="container text-center">
+    <h3 class="sitename">KVS HR Solutions</h3>
+    <p>Empowering businesses through smart HR strategies, compliance and people-driven success.</p>
+    
+    <div class="social-links d-flex justify-content-center">
+      <a href="#"><i class="bi bi-twitter-x"></i></a>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+  &copy; <strong><span>KVS HR Solutions</span></strong>. All Rights Reserved.         Designed by <a href="http://innovaneers.in/" target="_blank">Innovaneers Technologies</a></a>
+      </div>
+      <!-- <div class="credits">
+        Designed by <a href="#">KVS Web Team</a> | Powered by <a href="#">KVS Services</a>
+      </div> -->
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+  
+  <!-- Scripts (Bootstrap + AOS) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<script>
+const scriptURL = "https://script.google.com/macros/s/AKfycbwSojTAzQCRT09R0R2xAX7e0Jq9bss0hIygqviFJxrZdMCCeFOHjOSk_nLXCvrZtKV2_A/exec"; // ⬅️ replace this
+
+document.getElementById("contactForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const loading = document.querySelector(".loading");
+  const sentMsg = document.querySelector(".sent-message");
+  const errorMsg = document.querySelector(".error-message");
+
+  loading.style.display = "block";
+  sentMsg.style.display = "none";
+  errorMsg.style.display = "none";
+
+  let data = new FormData();
+  data.append("name", document.getElementById("name").value);
+  data.append("email", document.getElementById("email").value);
+  data.append("subject", document.getElementById("subject").value);
+  data.append("message", document.getElementById("message").value);
+
+  try {
+    await fetch(scriptURL, { method: "POST", body: data });
+    loading.style.display = "none";
+    sentMsg.style.display = "block";
+    document.getElementById("contactForm").reset();
+  } catch (error) {
+    loading.style.display = "none";
+    errorMsg.style.display = "block";
+    errorMsg.innerHTML = "Failed! Try again.";
+  }
+});
+</script>
+</body>
+
+</html>
+
