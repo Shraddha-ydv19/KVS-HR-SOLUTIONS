@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Employee Advisory & Career Support Services | KVS HR Solutions</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/KVSlogo.jpg" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS (🔥 VERY IMPORTANT) -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Page CSS -->
+  <style>
+    .advisory-hero {
+      background: url('assets/img/abbanner.png') center/cover no-repeat;
+      height: 65vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .advisory-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.15);
+    }
+
+    .advisory-hero .content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+    }
+
+    .advisory-hero h1,
+    .advisory-hero p {
+      color: #ffffff;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+      height: 100%;
+      transition: .3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .trust-badge i {
+      font-size: 28px;
+      color: #1565A3;
+    }
+
+    .highlight-box {
+      background: #f5f9ff;
+      border-left: 5px solid #1565A3;
+      padding: 25px;
+      border-radius: 10px;
+    }
+
+    .disclaimer {
+      font-size: 13px;
+      color: #666;
+    }
+
+    .header {
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+/* On scroll (same as Services page) */
+.scrolled .header {
+ background-color: #1565A3;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-img {
+  max-width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 992px) {
+  .service-box {
+    flex-direction: column; /* column stacking on mobile/tablet */
+  }
+  .service-img, .service-content {
+    height: auto; /* automatic height */
+  }
+  .service-content {
+    padding: 20px;
+  }
+  .service-img {
+    margin-bottom: 15px;
+  }
+}
+.service-content h3 {
+  font-size: 22px;   /* heading bada karo */
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.service-content p {
+  font-size: 16px;   /* paragraph text bada */
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.service-content ul li {
+  font-size: 15.5px; /* list text readable */
+  line-height: 1.6;
+}
+.service-img {
+  width: 80%;
+  max-height: 300px;  /* image ka height control karo */
+  object-fit: cover;  /* image proportion maintain rahe */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.service-box {
+  display: flex;
+  align-items: stretch;  /* image aur text same height */
+  margin-bottom: 50px;
+}
+
+
+
+/* TEXT CONTENT */
+.service-content {
+  background: #ffffff;       /* white background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertically center text */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* subtle shadow */
+  width: 100%;               /* text container full width like image */
+}
+
+
+
+/* FLEX FIX FOR RESPONSIVE (mobile/tablet) */
+@media (max-width: 992px) {
+  .service-box {
+    flex-direction: column; /* stack image and text */
+    align-items: center;
+  }
+
+  .service-img, .service-content {
+    width: 100%;
+    height: auto; /* auto height on mobile */
+  }
+
+  .service-content {
+    margin-top: 15px; /* gap between image and text */
+    padding: 20px;
+  }
+}
+
+  </style>
+</head>
+
+<body class="index-page">
+
+<!-- ===== HEADER (SERVICES PAGE EXACT) ===== -->
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container position-relative d-flex align-items-center justify-content-between">
+
+    <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <img src="assets/img/upscalemedia-transformed.png" alt="KVS HR Solutions">
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Outsourcing_Solutions.html">Outsourcing Solutions</a></li>
+        <li><a href="employee-advisory-services.html" class="active">Employee Advisory</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+  </div>
+</header>
+
+<main class="main">
+
+<!-- ===== HERO ===== -->
+<section class="advisory-hero">
+  <div class="content">
+    <h1 class="fw-bold">Employee Advisory & Career Support Services</h1>
+    <p class="mt-3">
+      Confidential HR guidance for employees navigating workplace and career challenges
+    </p>
+
+    <div class="mt-4">
+      <a href="Contact.html" class="btn btn-primary rounded-pill px-4 me-2">
+        Book a Confidential HR Consultation
+      </a>
+      <a href="Contact.html" class="btn btn-outline-light rounded-pill px-4">
+        Request a Call Back
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INTRO ===== -->
+<section class="py-5">
+  <div class="container text-center">
+    <p class="mx-auto" style="max-width:900px;">
+      In an era of restructuring, layoffs, performance pressure, and workplace uncertainty,
+      employees often struggle without access to the right HR guidance.<br><br>
+      <strong>KVS HR Solutions</strong> provides confidential, ethical, and practical HR advisory
+      support to help employees take informed and confident decisions.
+    </p>
+  </div>
+</section>
+
+<!-- ===== WHY THIS SERVICE EXISTS ===== -->
+<section class="light-background py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">
+      Why Employees Need Independent HR Advisory Support
+    </h2>
+
+    <p class="text-center mx-auto" style="max-width:900px;">
+      Today’s corporate environment is fast-changing and often unpredictable. Employees face challenges
+      such as sudden restructuring, job loss, unfair performance processes, toxic reporting relationships,
+      compensation confusion, and policy ambiguity.<br><br>
+      Most employees hesitate to raise concerns internally due to fear of bias or career risk.
+      <strong>KVS HR Solutions bridges this gap</strong> by offering a neutral, confidential HR advisory
+      platform focused entirely on employee interests.
+    </p>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="py-5">
+  <div class="container">
+
+    <h2 class="fw-bold text-center mb-5">
+      Our Employee Advisory & Career Support Services
+    </h2>
+
+    <!-- ===== SERVICE 1 ===== -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <div class="service-card">
+          <h5>Career Transition & Job Loss Advisory</h5>
+          <ul>
+            <li>Layoff / termination impact assessment</li>
+            <li>Exit options & severance guidance</li>
+            <li>Notice period & F&F clarity</li>
+            <li>Career transition roadmap</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img src="assets/img/careertrasitision.jpg" class="service-img" alt="">
+      </div>
+    </div>
+
+    <!-- ===== SERVICE 2 ===== -->
+    <div class="row align-items-center mb-5 flex-md-row-reverse">
+      <div class="col-md-6">
+        <div class="service-card">
+          <h5>Organizational Restructuring & Role Change</h5>
+          <ul>
+            <li>Role elimination vs modification</li>
+            <li>Transfers & reporting changes</li>
+            <li>Acceptance vs negotiation guidance</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img src="assets/img/organizationRestructure.webp" class="service-img" alt="">
+      </div>
+    </div>
+
+    <!-- ===== SERVICE 3 ===== -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <div class="service-card">
+          <h5>Manager & Workplace Conflict Advisory</h5>
+          <ul>
+            <li>Reporting manager conflicts</li>
+            <li>Toxic workplace assessment</li>
+            <li>Bias, harassment & escalation guidance</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img src="assets/img/managerWorkplace.jpg" class="service-img" alt="">
+      </div>
+    </div>
+
+    <!-- ===== SERVICE 4 ===== -->
+    <div class="row align-items-center mb-5 flex-md-row-reverse">
+      <div class="col-md-6">
+        <div class="service-card">
+          <h5>Performance Review & PIP Advisory</h5>
+          <ul>
+            <li>Appraisal & rating review</li>
+            <li>PIP evaluation & risk assessment</li>
+            <li>Documentation coaching</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img src="assets/img/performanceReview.jpg" class="service-img" alt="">
+      </div>
+    </div>
+
+    <!-- ===== SERVICE 5 ===== -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <div class="service-card">
+          <h5>Compensation, Payroll & Benefits</h5>
+          <ul>
+            <li>Salary structure clarity</li>
+            <li>Incentive & variable pay disputes</li>
+            <li>Gratuity & bonus guidance</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img src="assets/img/compensationPayroll.jpg" class="service-img" alt="">
+      </div>
+    </div>
+
+    <!-- ===== SERVICE 6 ===== -->
+    <div class="row align-items-center mb-5 flex-md-row-reverse">
+      <div class="col-md-6">
+        <div class="service-card">
+          <h5>Career Growth & Development</h5>
+          <ul>
+            <li>Career direction & role fitment</li>
+            <li>Skill gap analysis</li>
+            <li>Leadership coaching</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img src="assets/img/careerGrowth.jpg" class="service-img" alt="">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== ENGAGEMENT MODEL ===== -->
+<section class="light-background py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">
+      Employee HR Advisory Model – Simple, Transparent & Ethical
+    </h2>
+
+    <div class="highlight-box mx-auto" style="max-width:900px;">
+      <ul>
+        <li>One-time confidential HR consultation</li>
+        <li>Nominal registration / advisory fee</li>
+        <li>Case-based advisory charges</li>
+        <li>No long-term commitment unless required</li>
+      </ul>
+    </div>
+
+    <div class="row text-center mt-4">
+      <div class="col trust-badge"><i class="bi bi-shield-lock"></i><p>Confidential</p></div>
+      <div class="col trust-badge"><i class="bi bi-person-check"></i><p>Employee-First</p></div>
+      <div class="col trust-badge"><i class="bi bi-award"></i><p>Ethical Advisory</p></div>
+      <div class="col trust-badge"><i class="bi bi-briefcase"></i><p>Corporate HR Expertise</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold">Need Confidential HR Guidance?</h2>
+    <p class="mt-3">
+      If you are facing workplace uncertainty, career disruption, or HR-related challenges,
+      connect with us for confidential and professional advisory support.
+    </p>
+
+    <p class="fw-bold">
+      📩 contact@kvshrsolutions.com <br>
+      🌐 www.kvshrsolutions.com
+    </p>
+
+    <a href="Contact.html" class="btn btn-primary rounded-pill px-5 mt-3">
+      Book Confidential HR Consultation
+    </a>
+  </div>
+</section>
+
+<!-- ===== DISCLAIMER ===== -->
+<section class="light-background py-3">
+  <div class="container text-center disclaimer">
+    This service provides advisory and guidance support only.
+    KVS HR Solutions does not offer legal representation.
+    All consultations are strictly confidential.
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer id="footer" class="footer dark-background">
+  <div class="container text-center">
+    <h3 class="sitename">KVS HR Solutions</h3>
+    <p>Empowering businesses through smart HR strategies, compliance and people-driven success.</p>
+    
+    <div class="social-links d-flex justify-content-center">
+      <a href="#"><i class="bi bi-twitter-x"></i></a>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+  &copy; <strong><span>KVS HR Solutions</span></strong>. All Rights Reserved.         Designed by <a href="http://innovaneers.in/" target="_blank">Innovaneers Technologies</a></a>
+      </div>
+      <!-- <div class="credits">
+        Designed by <a href="#">KVS Web Team</a> | Powered by <a href="#">KVS Services</a>
+      </div> -->
+    </div>
+  </div>
+</footer>
+
+
+<!-- Scripts -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+
+</body>
+</html>
